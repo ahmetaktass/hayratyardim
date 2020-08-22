@@ -1,0 +1,504 @@
+@import "reset.scss";
+
+@import "variable.scss";
+@import "button.css";
+.container {
+    padding: 0;
+    
+}
+
+a{
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.hero {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 87px;
+}
+h1{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    
+}
+h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+}
+h3{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+}
+h5{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+h6{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.h5{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+.h5-bold{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+.text-14-medium {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.text-14-paragraph{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+.text-12-paragraph{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+.text-small{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.text-extra-small{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+/* identical to box height, or 160% */
+
+text-transform: uppercase;
+
+}
+.a-text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737984;
+    }
+
+//Header // 
+#header{
+    margin-top: $margin-top-header;
+    background-color: $color-white;
+}
+.header-logo-container{
+    display: flex;
+    
+}
+.header-nav-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 90px;
+}
+.header-nav-container a {
+    margin-left:32px;
+    color: $color-dark;
+    font-size: 14px;;
+}
+.header-nav-container .icon-Down{
+    margin-left: 8px;
+}
+
+
+.header-search{
+    
+    margin-left: 34px;
+   
+    
+}
+.header-search img{
+    
+    fill: red;
+   
+    
+}
+
+.nav-button-1{
+    width: 131px;
+    height: 48px;
+    padding: 16px 24px;
+    font-size: $navbar-font-size;
+    line-height: $navbar-line-hight;
+    background-color: $color-green;
+    color: $color-primary;
+    text-align: center;
+    font-family: 'Inter';
+    margin-left: 26px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.nav-button-2{
+    width: 227px;
+    height: 48px;
+    margin-left: 16px;
+    background-color: $color-primary;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+
+}
+
+
+
+.icon-User,.icon-Search,.icon-Basket{
+    color: $color-primary;
+}
+.icon-Down{
+    color: $color-white;
+}
+
+
+
+#bg-header .col-lg-7{
+    height: 590px;
+    z-index: -10;
+    margin-bottom: -590px;
+    background-color: $color-green-lighter !important;
+}
+
+
+
+
+
+//header-section-nav//
+#header-section{
+    margin-top: $margin-top-header-section;
+}
+.header-section-nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+.left-arrow{
+    
+    border-radius: 16px;
+    border: 1px solid #D9E6E2;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+   
+    
+}
+.right-arrow{
+    position: absolute;
+    right: 32px;
+    @extend .left-arrow
+    
+    
+}
+.Buttons-Tabs-Active{
+   width: 65px ;
+    margin:0 16px;
+}
+.header-section-nav-container li a:first-child{
+    margin-left: 16px;
+    
+}
+.header-section-nav-container li a{
+    margin-left: 32px;
+    color:$color-dark-lighter;
+    line-height: $navbar-line-hight;
+    font-size: $header-section-nav-font-size;
+}
+
+.header-section-content{
+    margin-top: 100px;
+}
+
+.header-section-content h5{
+    @extend .text-small;
+    color: $color-primary;
+      
+    
+}
+.header-section-content h1{
+    font-size:$all-slider-h1-font-size;
+    line-height: $all-slider-line-hight; 
+    color: $color-dark;  
+    margin-bottom: 24px;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-top: 8px;
+}
+.header-section-content p{
+    font-size:$navbar-font-size;
+    line-height: $all-slider-p-line-hight; 
+    color: $color-dark-lighter;
+    margin-bottom: 24px;
+    font-family: 'Inter';
+    margin-top: 24px;
+    
+}
+
+.header-section-content .Buttons-Large-Secondary-Default{
+    width: 126px;
+    height: 48px;
+    margin-top: 24px;
+}
+.header-section-content .Buttons-Large-Primary-Default{
+    width: 113px;
+    height: 48px;
+    margin-top: 24px;
+    margin-left: 16px;
+}
+//all-slider-img
+.all-slider-img-container{
+    margin-top: 32px;
+    width: 100%;
+    height: 442px;
+    background-image: url(../images/slider-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0px 8px 32px rgba(0, 0, 0, 0.16));
+    position: relative;
+    
+}
+.all-slider-play{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.all-slider-play .icon-Play{
+    color: $color-white;
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.awards{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 12px;
+    
+}
+
+.awards-text .text-14-paragraph{
+    line-height: 18px;
+    color: $color-primary;
+}
+.awards-text .text-14-medium{
+    line-height: 18px;
+    color: $color-dark-lighter;
+}
+.awards-icon .icon-Awards {
+    color: $color-primary;
+}
+
+// hızlı bağış
+#hizlibagis{
+    margin-top: 72px;
+}
+#hizlibagis h2{
+    color:$color-dark;
+}
+#hizlibagis a:first-child{
+    
+    margin-left: 12px !important;
+}
+#hizlibagis a{
+    @extend .a-text;
+    margin-left: 32px;
+}
+#hizlibagis .col-lg-10{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 12px;
+} 
+.t-bagislar{
+    color: $color-primary;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 12px;
+ 
+    
+}
+.mt-32{
+    margin-top: 32px;
+}
+
+#hizlibagis .card{
+   
+    max-width: 310px !important;
+    background: #FFFFFF;
+    border: 1px solid #F1F3F7;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px #F1F3F7;
+    border-radius: 8px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    
+}
+
+
+.card h5{
+    color: $color-dark;
+}
+.card .text-14-paragraph{
+    color: $color-dark-lighter;
+}
+.card-text{
+    @extend .text-12-paragraph;
+    color: $color-dark-lighter;
+    
+}
+.card-label{
+    margin-top: 24px;
+    width: 100%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: $color-label;
+}
+.card .input-t{
+    width: 100%;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #F1F3F7;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px #F1F3F7;
+    border-radius: 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px; color: $color-dark-lighter;
+    mix-blend-mode: normal;
+    padding-left: 16px;
+   
+    
+    
+}
+.card .Buttons-Large-Secondary{
+   
+    border: none;
+    margin-left: 2px;
+    margin: 0;
+   
+}
+
+#projeler {
+    margin-top: 72px;
+}
+#projeler h2{
+    color:$color-dark;
+}
+#projeler a:first-child{
+    
+    margin-left: 12px !important;
+}
+#projeler a{
+    @extend .a-text;
+    margin-left: 32px;
+}
+#projeler .col-lg-10{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 12px;
+} 
+#projeler .col-7{
+    padding-right: 0;
+}
+#projeler .col-6{
+    padding-right: 0;
+}
+.card-body{
+    padding: 24px;
+}

@@ -1,0 +1,15 @@
+@import "variable.scss";
+.button1
+{
+    width: 131;
+    height: 48px;
+    color: $button1-font-color;
+    background-color:$button1-bg-color;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: $navbar-font-size;
+    line-height: $navbar-line-hight;
+}
